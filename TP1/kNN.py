@@ -61,7 +61,7 @@ def main():
 	set_treino=[]
 	set_teste=[]
 	splitRatio = 0.67
-	carregaDataset('./datasets/iris.csv', splitRatio, set_treino, set_teste)
+	carregaDataset('./datasets/wine.csv', splitRatio, set_treino, set_teste)
 	print ('Set de treinamento: ' + repr(len(set_treino)))
 	print ('Set de teste: ' + repr(len(set_teste)))
 	# gera predições
