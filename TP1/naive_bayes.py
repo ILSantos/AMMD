@@ -13,6 +13,20 @@ def carregaCsv(arquivo, header=False):
         dataset[i] = [float(x) if re.search('\d', x) else x for x in dataset[i]]
     return dataset
 
+def convertStringFloat(dataset, coluna):
+    for linha in dataset:
+        linha[coluna] = float(linha[coluna].strip())
+
+def convertStringInt(dataset, coluna):
+    valor_classe = [linha[coluna] for linha in dataset]
+    unico = set(valor_classe)
+    lookup = dict()
+    for i, valor in enumerate(unico):
+        lookup[valor] = i
+    for linha in dataset:
+        linha[coluna] = lookup[linha[coluna]]
+    return lookup
+
 # divide o dataset 
 def divDataset(dataset, splitRatio):
     tam_treino = int(len(dataset) * splitRatio)
@@ -91,12 +105,14 @@ def acuracia(set_teste, predicoes):
     return (correto/float(len(set_teste))) * 100.0
 
 def main():
-    arquivo = (r'./datasets/wine.csv')
+    arquivo = (r'./datasets/tips.csv')
     slipRatio = 0.67
     dataset = carregaCsv(arquivo, header=True)
     set_treino, set_teste = divDataset(dataset, slipRatio)
     print("Usando %s linhas pra treinamento e %s linhas pra teste" % (len(set_treino),(len(set_teste))))
-    # prepara modelo
+    
+   
+   # prepara modelo
     sumarios = sumarizaPorClasse(set_treino)
     # testa modelo
     predicoes = pegaPredicoes(sumarios, set_teste)
