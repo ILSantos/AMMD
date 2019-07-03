@@ -20,3 +20,22 @@ __Indutores implementados:__
 2. Árvores de decisão (mínimo: ID3, ganho de informação e atributos categóricos)
 3. Regras (algoritmo de cobertura estudado em aula para atributos categóricos)
 4. Vizinhança (k-NN; deve ser possível utilizar distância euclidiana, Manhattan e Chebyshev)
+
+## Trabalho Prático 2
+
+
+__Objetivo:__ aplicar o processo de Aprendizado de Máquina em um problema e descrever os resultados
+
+__Descrição:__ 
+1. Escolher um problema de classificação, regressão ou agrupamento do repositório UCI
+2. Descrever o problema: qual a aplicação de AM/ML envolvido, quantos exemplos o conjunto possui, quais os atributos e seus tipos, apresentar uma breve discussão sobre o significado dos atributos.
+3. Escolher um algoritmo, apresentar uma brebe discussão sobre o algoritmo e motivo de escolha do mesmo.
+	- Regressão linerar, ou
+	- Naive Bayes, ou
+	- Árvore de decisão, ou 
+	- SVM, ou 
+	- k-Means, ou 
+	- DBSCAN, ou 
+	- AGNES, ou 
+	- Redes neurais artificiais
+4. Apresentar uma visão geral da implementação. Se fez uso do Weka, pré-processamento, emprego de engenharia de atributos. 
