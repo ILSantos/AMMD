@@ -29,7 +29,7 @@ __Objetivo:__ aplicar o processo de Aprendizado de Máquina em um problema e des
 __Descrição:__ 
 1. Escolher um problema de classificação, regressão ou agrupamento do repositório UCI
 2. Descrever o problema: qual a aplicação de AM/ML envolvido, quantos exemplos o conjunto possui, quais os atributos e seus tipos, apresentar uma breve discussão sobre o significado dos atributos.
-3. Escolher um algoritmo, apresentar uma brebe discussão sobre o algoritmo e motivo de escolha do mesmo.
+3. Escolher um algoritmo, apresentar uma breve discussão sobre o algoritmo e motivo de escolha do mesmo.
 	- Regressão linerar, ou
 	- Naive Bayes, ou
 	- Árvore de decisão, ou 
